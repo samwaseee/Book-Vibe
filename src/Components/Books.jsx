@@ -22,8 +22,5 @@ const Books = () => {
     );
 };
 
-Books.propTypes = {
-    
-};
 
 export default Books;
