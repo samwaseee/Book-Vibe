@@ -39,8 +39,8 @@ const BookDetails = () => {
                     <p className="text-xl py-5 border-b-2 border-dashed">{category}</p>
                     <p className="mt-10"><span className="font-bold">Review : </span>{review}</p>
                     <p className="my-10 border-b-2 border-dashed pb-10"><span className="font-bold mr-7">Tag</span>
-                        <div className="badge badge-outline text-[#22be0a] font-bold mr-3">#{tags[0]}</div>
-                        <div className="badge badge-outline text-[#22be0a] font-bold">#{tags[1]}</div>
+                        <div className="badge bg-[#22be0a10] text-[#22be0a] font-bold mr-3">#{tags[0]}</div>
+                        <div className="badge bg-[#22be0a10] text-[#22be0a] font-bold">#{tags[1]}</div>
                     </p>
                     <div className="flex gap-16">
                         <div>

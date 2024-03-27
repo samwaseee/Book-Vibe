@@ -13,8 +13,8 @@ const Book = ({ book }) => {
                     <figure className='bg-[#F3F3F3] p-5 rounded-xl'><img src={image} /></figure>
                     <div className="card-body">
                         <div className="card-actions">
-                            <div className="badge badge-outline text-[#22be0a] font-bold">{tags[0]}</div>
-                            <div className="badge badge-outline text-[#22be0a] font-bold">{tags[1]}</div>
+                            <div className="badge bg-[#22be0a10] text-[#22be0a] font-bold">{tags[0]}</div>
+                            <div className="badge bg-[#22be0a10] text-[#22be0a] font-bold">{tags[1]}</div>
                         </div>
                         <h2 className="card-title fair my-4">
                             {bookName}
