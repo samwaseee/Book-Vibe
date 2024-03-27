@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ListedBook = ({book}) => {
-    console.log(book);
+    // console.log(book);
 
     const { bookId, bookName, author, image, rating, category, tags } = book;
 

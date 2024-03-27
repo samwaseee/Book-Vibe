@@ -11,14 +11,20 @@ const BookDetails = () => {
     console.log(bookId.id, book);
 
     const handleWishlist = () => {
-        const getData = JSON.parse(localStorage.getItem('book-wishlist'));
-        saveBookWishList(book);
-        toast.success("Added successfully");
+        if(saveBookWishList(book) === "wishRead"){
+        toast.success("Added to wishlist successfully")
+        }
+        else if(saveBookWishList(book) === "read"){
+            toast.error("Already in the read list")
+        }
+        else{
+            toast.error("Already in the wishlist")
+        }
       }
       
       const handleReadlist = () => {
-        saveBookReadList(book);
-        toast.success("Added successfully");
+        saveBookReadList(book) ?
+        toast.success("Added to read list successfully") : toast.error("Already in the Read list");
       }
 
     const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
