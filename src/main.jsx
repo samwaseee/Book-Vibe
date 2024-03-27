@@ -6,18 +6,19 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Root from "./Components/Root";
-import Header from "./Components/Header";
 import Books from "./Components/Books";
 import BookDetails from "./Components/BookDetails";
 import ListedBooks from "./Components/ListedBooks";
 import About from "./Components/About";
 import TopGrossing from "./Components/TopGrossing";
 import PagesToRead from "./Components/PagesToRead";
+import Error from "./Components/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error/>,
     children: [
       {
         path: "/",

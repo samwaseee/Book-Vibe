@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-import { CiLocationOn } from "react-icons/ci";
 import { GoPeople } from "react-icons/go";
-import { MdMenuBook } from "react-icons/md";
+import { LuArrowBigUp } from "react-icons/lu";
 
 const ListedBook = ({ book }) => {
     // console.log(book);
@@ -11,7 +10,11 @@ const ListedBook = ({ book }) => {
 
 
     return (
-        <div className='flex gap-5 border-2 p-4 rounded-xl mb-4'>
+        <div className='flex flex-wrap gap-5 border-2 p-4 rounded-xl my-4'>
+            <div className='-mr-36 -mt-2 flex bg-[#ffad332d] badge p-4'>
+                <LuArrowBigUp style={{fontSize: "2rem", color: "#FF6D33"}}></LuArrowBigUp>
+                <p className='text-[#ff6d33] font-bold mt-1'>Rated {rating}</p>
+            </div>
             <img src={image} className='bg-[#0000000f] py-8 px-12 rounded-lg' />
             <div>
                 <h3 className='text-2xl fair font-bold'>{bookName}</h3>
@@ -23,21 +26,17 @@ const ListedBook = ({ book }) => {
                         <div className="badge bg-[#22be0a10] text-[#22be0a] font-semibold p-4">#{tags[1]}</div>
                     </div>
 
-                    <p className='flex items-center gap-2'><CiLocationOn />Year of Publishing: {yearOfPublishing}</p>
                 </div>
-                <div className='flex items-center border-b-2 pb-4 lg:w-[60vw]'>
+                <div className='flex items-center pb-4'>
                     <GoPeople />
                     <p className='mr-8 ml-2'>Publisher: {publisher}</p>
-                    <MdMenuBook />
-                    <p className='ml-2'>Page {totalPages}</p>
                 </div>
                 <div className="card-actions mt-5 gap-5">
                     <div className="badge bg-[#328eff2b] text-[#328EFF] font-semibold p-4">Category: {category}</div>
-                    <div className="badge bg-[#ffad332a] text-[#FFAC33] font-semibold p-4">Rating: {rating}</div>
-                    <div className="badge bg-[#22be0a] text-white font-semibold p-4">View Details</div>
                 </div>
 
             </div>
+            
         </div>
     );
 };
