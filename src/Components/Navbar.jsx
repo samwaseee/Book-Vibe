@@ -30,7 +30,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <div className="navbar-end">
+                    <div className="navbar-end grid md:flex">
                         <a className="btn btn-success text-white bg-[#23BE0A]">Sign In</a>
                         <a className="btn btn-info text-white bg-[#59C6D2] ml-3">Sign Up</a>
                     </div>
