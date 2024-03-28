@@ -2,6 +2,8 @@
 
 Book Vibe is a dynamic and interactive website for book lovers. It offers a wide range of features that enhance the user's experience in exploring and managing their favorite books.
 
+> Live Site : https://book-vibe-assingment-8.surge.sh/
+
 ## Features
 
 1. **Navbar**: A navbar with a website logo or name on the left side & 5 menu items in the middle: Home, Listed Books, Pages to Read, Top Grossing Books, and About Us. It also includes two buttons named “Sign In” and “Sign Up”.
