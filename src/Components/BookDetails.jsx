@@ -31,7 +31,7 @@ const BookDetails = () => {
 
     return (
         <>
-            <div className="flex sans gap-10 my-14">
+            <div className="flex flex-wrap sans gap-10 my-14">
                 <img src={image} className="w-[100vw] max-h-fit bg-[#13131317] p-16 rounded-xl" />
                 <div>
                     <h1 className="fair text-5xl font-bold">{bookName}</h1>
