@@ -13,7 +13,9 @@ const TopGrossing = () => {
                 setBooks(data);
                 setTopBooks([...books].sort((a, b) => b.rating - a.rating));
             });
-    }, [books])
+    }, [])
+
+    console.log(books)
 
 
     return (

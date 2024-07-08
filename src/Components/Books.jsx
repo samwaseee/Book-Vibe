@@ -1,16 +1,19 @@
 import Header from './Header';
 import Book from './Book';
 import { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const Books = () => {
 
-    const [books,setBooks] = useState([]);
+    // const [books,setBooks] = useState([]);
 
-    useEffect(() => {
-        fetch('books.json')
-        .then(res => res.json())
-        .then(data => setBooks(data));
-    },[])
+    // useEffect(() => {
+    //     fetch('books.json')
+    //     .then(res => res.json())
+    //     .then(data => setBooks(data));
+    // },[])
+
+    const books = useLoaderData();
 
     return (
         <>
